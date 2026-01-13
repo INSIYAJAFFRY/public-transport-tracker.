@@ -1,0 +1,18 @@
+function findRoute() {
+  let source = document.getElementById("source").value;
+  let destination = document.getElementById("destination").value;
+
+  if (source === "" || destination === "") {
+    document.getElementById("result").innerHTML =
+      "❌ Please enter both source and destination";
+    return;
+  }
+
+  document.getElementById("result").innerHTML =
+    "✅ Best route found from <b>" +
+    source +
+    "</b> to <b>" +
+    destination +
+    "</b><br>🚌 Suggested transport: Bus → Metro → Walk";
+}
+
